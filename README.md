@@ -1,4 +1,4 @@
-# DataChat — Chat with Your Data
+# DataChat - Chat with Your Data
 
 A Streamlit-based application that uses **Google Cloud's Conversational Analytics API** to let users ask natural language questions about structured data in BigQuery and receive answers with auto-generated SQL, data tables, and charts.
 
