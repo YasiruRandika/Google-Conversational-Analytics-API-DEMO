@@ -158,20 +158,6 @@ DataChat/
 | `src/visualization.py` | Chart rendering | Vega-Lite specs → Charts (with protobuf/version fixes) |
 | `app.py` | Streamlit UI | Bringing all modules together in an interactive app |
 
-## Comparison: DataChat vs Data Agent Basic
-
-| Aspect | DataChat (This Project) | Data Agent - Basic |
-|--------|------------------------|--------------------|
-| SQL Generation | Google's managed API (Gemini) | Custom LangGraph pipeline |
-| Data Source | BigQuery (managed) | Azure SQL Database |
-| LLM | Gemini (built into API) | Azure OpenAI (GPT-4) |
-| RAG | Built into API (authored context) | Custom FAISS vector store |
-| Retry Logic | API handles automatically (3x) | Custom error handler |
-| Conversation | API-managed stateful mode | Custom memory system |
-| Visualization | API generates Vega-Lite specs | Not included |
-| Effort | ~2,000 lines of code | ~3,000+ lines of code |
-
-**Key Insight**: The Conversational Analytics API abstracts away SQL generation, validation, retry, and visualization. The ~2,000 lines include workarounds for protobuf handling, Vega-Lite version mismatches, and timestamp format issues discovered during development. A minimal integration could be done in much fewer lines.
 
 ## API Rate Limits
 
