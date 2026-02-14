@@ -1,0 +1,19 @@
+# Google Cloud Conversational Analytics API
+google-cloud-geminidataanalytics>=0.9.0
+google-auth>=2.29.0
+protobuf>=4.25.0
+
+# Web Framework
+streamlit>=1.40.0
+
+# Visualization (render chart specs from API responses)
+altair>=5.4.0
+
+# Data handling
+pandas>=2.2.0
+
+# Configuration
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-dotenv>=1.0.0
+PyYAML>=6.0
